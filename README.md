@@ -1,2 +1,2 @@
-# PonisioLab
-Guiding principles of the Ponisio lab
+# Hallett Lab Policies
+Guiding principles of the Hallett Lab
