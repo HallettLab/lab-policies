@@ -2,3 +2,5 @@
 .Rapp.history
 .Rhistory
 .pdf
+.Rproj.user
+*.DS_Store
