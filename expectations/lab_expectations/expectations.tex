@@ -14,7 +14,7 @@ paperwidth=8.5in, paperheight=11in, nohead]{geometry}
 \usepackage{xr}
 
 \title{Expectations}
-\author{Lauren C. Ponisio}
+\author{Hallett Lab}
 
 \begin{document}
 
@@ -30,75 +30,46 @@ There are five key parts of a study:
 \item Writing
 \end{enumerate}
 
-A good rule of thumb is a coauthor must be involved in at least three
-of the five pieces. It is widely acknowledged that underrepresented
+A good rule of thumb is a coauthor is involved in at least three
+of the five pieces, or has contributed substantially to two. When an individual's support or input is sought for an early or critical stage of a project, it is lab practice to give them the opportunity to be involved to the level of authorship. For example, if the project involves follow-up at someone's study site or relies on their expertise for system knowledge/experimental design/methodological approach, the project lead should make sure that they have the opportunity to continue to engage with the project should they be interested. 
+
+It is widely acknowledged that underrepresented
 groups in science are coauthored less because their contributions are
 not as easily valued or apparent. Lab members are encouraged to keep
 this in mind when considering the contributions of others, and also
-when advocating for their own contributions.
+when advocating for their own contributions. Especially when undergraduates are involved in a project, they should be offered the chance to remain involved past graduation (if they are motivated and interested to do so). 
 
-We are part of community and should freely help each other whenever
-appropriate, i.e., bounce ideas off each other, ask for help with
-code, ran a statistical analysis by someone. That being said, it is
-important to discuss coauthorship early and often. Be upfront about:
-
-\begin{enumerate}
-\item Your interest in a project
-\item What you can contribute ``freely''v (i.e., without coauthorship)
-\item What level of involvement you believe warrants coauthorship
-  (i.e., I am happy to brain storm an analysis with you, but if I am
-  developing code with you I would like to be more fully involved in
-  the project and be coauthored)
-\end{enumerate}
-
-\section{Reproducibility}
-We are committed to using the best practices in scientific computing
-and reproducible science. All the
-materials needed to reproduce the study entirely (from data collection
-to analysis), must be make available publicly and associated with all
-publications. This includes:
-\begin{enumerate}
-\item 1. Curating all data in a relational database where automated
-  data cleaning is conducted that is version controlled, including a
-  record of any changes to the data and the raw data is never altered.
-\item Version controlling and posting all protocols (collection,
-  molecular, etc.) publicly, and associate each protocol DOI with its
-  corresponding publication.
-\item Version control all analytic code. Final products will be
-  executable from a single script with an explanatory Rmarkdown file,
-  publicly available and associated with corresponding publication.
-\item Post all final data publicly
-\end{enumerate}
+Lead authors are expected to keep a running tally of folks who contribute to the project to ensure that everyone is appropriately credited (either as authors or in the acknowledgement). It is recommended that this tally be maintained and updated in the project's Github wiki.
 
 \section{Data management}
 All lab members are responsible for the curation of the data they
 collect. The lab's data management protocol is:
 
 \begin{enumerate}
-\item Data will first be entered from field sheets into a spreadsheet
-  on UC Drive, the UC’s version of Google Drive with FERPA and US-EU
-  Safe Harbor protections, then downloaded as \.csv files into
-  password-protected Dropbox (Box is also an option, but access
-  disappears after your UC id expires).
-\item We will use R (or programming language of your choice) to check
-  each datasets fields for consistency and typographic errors and
-  output the cleaned data files for analyses. After any updates, the
-  Google spreadsheet is downloaded as a \.csv file, and cleaned and
-  assembled using R protocols, while never transforming the original
-  Google spreadsheet. All code for cleaning data will be version
-  controlled on Github so there is a record of any changes made to the
-  data.
-\item Structure Query Language (SQL) Lite package in R will create a
-  relational database that unites each of the relevant datasets for
-  analysis. Traditional spreadsheets will be created for the data made
-  publicly available.
+\item Data for projects in progress will be stored either in a project OneDrive or a project Dropbox folder that is shared with Lauren. Code for projects in progress will be backed up on Github and in a repository that is shared with Lauren (for grant-funded projects, this repository will typically live on the Hallett Lab Organization page).
+\item Hand-written field notes, lab notes, and datasheets will be scanned promptly and organized in a “Raw data” folder for each project. Field notes will be digitally archived in a Github wiki associated with a designated project repository to facilitate sharing among project members (located at https://github.com/HallettLab).
+\item Entered data will be saved in .csv files and stored within an``Entered data'' folder for each project. Data will be error-checked in R (e.g. for missing values and outliers signifying typos in entry). Corrections to the data will be documented within an associated R cleaning script. This script will also format the data to comply with ``tidy'' data format. The workflow for data cleaning will be stored in a Github repository associated with the project. The final, cleaned data product derived from this script will be exported to ``Cleaned data'' folder and will be the version that is publicly archived and shared. Lab derived data will follow a similar process, except that data may be entered or imported digitally (skipping the raw data scans).
+\item Protocols for all methods will be developed and stored within a ``Protocols'' folder; updates to the protocols will be noted with the date of revision. Protocols will serve to guide all project members in consistent methodologies and will also be the basis for final metadata. Detailed keys for column headings will be stored in a paired .csv file for each entered dataset (or alternatively be stored at the head of relevant .csv file).
+\item Upon project completion or when a lab member is preparing to graduate/move on, the data will be archived on the UO Server for permanent storage. 
+
 \end{enumerate}
 
+
+\section{Reproducibility}
+We are committed to using the best practices in scientific computing
+and reproducible science. All the
+materials needed to reproduce the study entirely (from data collection
+to analysis) should be made public upon publication. This includes:
+\begin{enumerate}
+\item Cleaned data products and associated metadata, uploaded to an appropriate digital archive. Often this will be the Environmental Data Initiative or the Knowledge Network for Biodiversity.
+\item Well-documented analytical code to run the  paper's analyses, archived either on Github or Zenodo (Zenodo is more stable for finished code).
+\end{enumerate}
+
+
 \section{Science communication}
-All lab members are required to communicate their research to a non
-academic audience at least once a year (i.e., blog for National
-Geographic, presentation at the Entomology fair, presentation to a
-school group etc.).
+The lab is encouraged to engage in science communication and outreach, and to keep a record of this engagement. For example, this might involve presenting at the Willamette Valley restoration meeting or CPOP meeting, attending the ARS Advisory meeting, leading a workshop on Github/data management for the broader community, etc. 
+
+It is helpful to keep a record of our community partners and how we have built relationships with them. To this end, outreach events should logged in a lab google document as short journal entries that include why/when/who/what/where.
 
 
 
